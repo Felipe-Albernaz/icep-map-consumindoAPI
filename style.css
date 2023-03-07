@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Varela Round', sans-serif;
+}
+
+html, body{
+    height: 100%;
+    background-color: #F0EEED;
+}
+
+
+.cabecalho{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+    background-color: #d4cfcc;
+    padding: 0 20px;
+}
+
+.box{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    gap: 50px;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.tabela{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border-collapse: collapse;
+    gap: 20px;
+}
+
+.tabela th{
+    background-color: #a4c5c5;
+}
+
+.tabela th, tr, td{
+    padding: 6px;
+    border: 1px solid #000000;
+}
+
+.box form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+}
+
+.box form input[type='text']{
+    width: 250px;
+    height: 35px;
+    padding-left: 40px;
+    font-size: 16px;
+    border: 1.5px solid #333;
+    border-radius: 5px;
+    background-image: url(/images/lupa.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left;
+}
+
+.box form input[type='submit']{
+    width: 120px; 
+    height: 35px;
+    border: none;
+    border-radius: 5px;
+    background-color: #559999;
+    cursor: pointer;
+    color: #ffffff;
+}
+
+.autor{
+    font-size: 15px;
+    margin-top: 100px;
+}
+
+.gmap_canvas, .maprouter{
+    max-width: 100%;
+    max-height: 400px;
+}
+
+.map{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+@media screen and (max-width: 792px) {
+    .tabela{
+        padding: 5px;
+    }
+
+    .tabela th,td,tr{
+        font-size: 14px;
+        border: 1px solid #000000;
+        padding: 5px;
+    }
+
+    .gmap_canvas, .maprouter{
+        max-width: 400px;
+        max-height: 300px;
+    }
+    
+    .map{
+        width: 100%;
+        height: 100%;
+    }
+
+}
+
